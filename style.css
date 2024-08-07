@@ -21,3 +21,26 @@ body{
     justify-content: space-between;
     text-align: center;
 }
+.cover .top h1,.cover .top h2,.cover .top h3{
+    color: white;
+}
+.cover .top h1{
+    font-size: 56px;
+}
+.cover .top h2{
+    font-size: 24px;
+}
+.cover .top h3{
+    font-size: 14px;
+}
+.cover .bottom button{
+    font-size: 14px;
+}
+.cover .bottom button:nth-child(1){
+    background-color: #3d6ae1;
+    color: #fff;
+}
+.cover .bottom button:nth-child(2){
+    background-color: #fff;
+    color: #393c41;
+}
