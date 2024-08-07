@@ -139,4 +139,15 @@ nav svg{
     .cover .top h2{
         font-size: 24px;
     }
+    .cover:nth-child(6){
+        background-position: middle;
+    }
+    .cover:nth-child(6) .top svg{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .cover:nth-child(6) .top svg{
+        width: 250px;
+    }
 }
