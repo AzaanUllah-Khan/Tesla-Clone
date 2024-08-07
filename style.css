@@ -72,3 +72,18 @@ body{
     background-color: #fff;
     color: #393c41;
 }
+nav{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 20px 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 500;
+}
+nav svg{
+    width: 120px;
+}
