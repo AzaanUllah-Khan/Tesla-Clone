@@ -35,6 +35,9 @@ body{
 .cover:nth-child(6){
     background-image: url("./Assets/BG-IMG\ 5.avif");
 }
+.cover:nth-child(7){
+    background-image: url("./Assets/BG-IMG\ 6.avif");
+}
 .cover .top {
     width: 100%;
 }
@@ -93,7 +96,7 @@ body{
     color: #a2a3a5;
 }
 .cover:nth-child(6) .bottom button:hover{
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.35);
     backdrop-filter: blur(1px);
 }
 .cover:nth-child(6) .bottom button:nth-child(1){
