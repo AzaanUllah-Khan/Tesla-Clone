@@ -21,6 +21,9 @@ body{
     justify-content: space-between;
     text-align: center;
 }
+.cover .top {
+    width: 100%;
+}
 .cover .top h1,.cover .top h2,.cover .top p{
     color: white;
 }
@@ -31,19 +34,9 @@ body{
 .cover .top h2{
     font-size: 26px;
     margin: -5px 0 7px;
-    position: relative;
     cursor: pointer;
     letter-spacing: -1px;
     font-weight: 700;
-}
-.cover .top h2::after{
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 1px;
-    background-color: white;
-    bottom: -4px;
-    left: 0;
 }
 .cover .top p{
     font-size: 16px;
@@ -51,8 +44,10 @@ body{
 }
 .cover .bottom{
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 20px;
+    width: 100%;
 }
 .cover .bottom button{
     cursor: pointer;
@@ -86,4 +81,15 @@ nav{
 }
 nav svg{
     width: 120px;
+}
+@media screen and (max-width: 600px) {
+    .cover .bottom button{
+        width: 50%;
+    }
+    .cover .top h1{
+        font-size: 42px;
+    }
+    .cover .top h2{
+        font-size: 24px;
+    }
 }
