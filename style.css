@@ -38,6 +38,15 @@ body{
 .cover:nth-child(7){
     background-image: url("./Assets/BG-IMG\ 6.avif");
 }
+.cover:nth-child(8){
+    background-image: url("./Assets/BG-IMG\ 7.avif");
+}
+.cover:nth-child(9){
+    background-image: url("./Assets/BG-IMG\ 8.avif");
+}
+.cover:nth-child(10){
+    background-image: url("./Assets/BG-IMG\ 9.avif");
+}
 .cover .top {
     width: 100%;
 }
