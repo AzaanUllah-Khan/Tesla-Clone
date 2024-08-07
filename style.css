@@ -29,6 +29,12 @@ body{
 .cover:nth-child(4){
     background-image: url("./Assets/BG-IMG\ 3.avif");
 }
+.cover:nth-child(5){
+    background-image: url("./Assets/BG-IMG\ 4.avif");
+}
+.cover:nth-child(6){
+    background-image: url("./Assets/BG-IMG\ 5.avif");
+}
 .cover .top {
     width: 100%;
 }
@@ -74,6 +80,27 @@ body{
 .cover .bottom button:nth-child(2){
     background-color: #fff;
     color: #393c41;
+}
+.cover:nth-child(6) .top svg{
+    width: 450px;
+}
+.cover:nth-child(6) .bottom button{
+    transition: all .3s ease-in-out;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-transform: uppercase;
+    color: #a2a3a5;
+}
+.cover:nth-child(6) .bottom button:hover{
+    background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(1px);
+}
+.cover:nth-child(6) .bottom button:nth-child(1){
+    box-shadow: 0 2px 0 #828383 inset;
+}
+.cover:nth-child(6) .bottom button:nth-child(2){
+    outline: 1px solid #393c41;
 }
 nav{
     display: flex;
