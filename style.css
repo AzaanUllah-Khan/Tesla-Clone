@@ -8,3 +8,16 @@
 body{
     background-color: #000;
 }
+.cover{
+    padding: 70px 30px 30px;
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-3-Desktop-US.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
