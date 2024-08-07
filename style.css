@@ -12,7 +12,6 @@ body{
     padding: 70px 30px 30px;
     width: 100%;
     height: 100vh;
-    background-image: url("./Assets/BG-IMG\ 1.avif");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -20,6 +19,15 @@ body{
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
+}
+.cover:nth-child(2){
+    background-image: url("./Assets/BG-IMG\ 1.avif");
+}
+.cover:nth-child(3){
+    background-image: url("./Assets/BG-IMG\ 2.avif");
+}
+.cover:nth-child(4){
+    background-image: url("./Assets/BG-IMG\ 3.avif");
 }
 .cover .top {
     width: 100%;
