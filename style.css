@@ -147,6 +147,17 @@ nav svg{
     font-weight: bolder;
     text-decoration: underline;
 }
+footer{
+    width: 100%;
+    color: white;
+    padding: 10px 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    gap: 20px;
+}
 @media screen and (max-width: 600px) {
     .cover .bottom button{
         width: 50%;
