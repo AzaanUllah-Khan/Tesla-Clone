@@ -131,7 +131,7 @@ nav svg{
 }
 .footer{
     width: 100%;
-    color: white;
+    color: #d0d1d2;
     text-align: center;
     padding: 30px 0;
     display: flex;
@@ -144,12 +144,14 @@ nav svg{
     line-height: 17px;
 }
 .footer p span{
+    color: #eee;
     font-weight: bolder;
     text-decoration: underline;
+    cursor: pointer;
 }
 footer{
     width: 100%;
-    color: white;
+    color: #d0d1d2;
     padding: 10px 10px 20px;
     display: flex;
     align-items: center;
@@ -158,9 +160,15 @@ footer{
     font-weight: bold;
     gap: 20px;
 }
+footer p{
+    cursor: pointer;
+}
 @media screen and (max-width: 600px) {
     .cover .bottom button{
         width: 50%;
+    }
+    .cover:nth-child(10) .bottom button{
+        width: 100%;
     }
     .cover .top h1{
         font-size: 42px;
