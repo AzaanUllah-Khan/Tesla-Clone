@@ -182,6 +182,17 @@ footer p{
     .cover:nth-child(6) .top svg{
         width: 300px;
     }
+    footer{
+        flex-direction: column;
+        gap: 15px;
+        border-top: 1px solid #d0d1d2;
+    }
+    .footer p{
+        width: 100%;
+    }
+    .footer{
+        padding: 10px;
+    }
 }
 @media screen and (max-width: 400px) {
     .cover:nth-child(6) .top svg{
