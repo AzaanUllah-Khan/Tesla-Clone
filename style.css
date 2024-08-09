@@ -154,7 +154,7 @@ nav {
     width: 100%;
     background-color: transparent;
     z-index: 500;
-    transition: top 1s ease-in-out;
+    transition: top .7s ease-in-out;
 }
 
 nav.scrolled-up {
@@ -198,7 +198,7 @@ nav .links h1 {
     padding: 7px 15px;
     transition: all .3s ease-in-out;
     cursor: pointer;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 nav .links h1:hover {

@@ -18,3 +18,15 @@ window.addEventListener('scroll', function() {
 
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 });
+
+const hoverItems = document.querySelectorAll('.links h1');
+
+hoverItems.forEach(hoverItem => {
+    hoverItem.addEventListener('mouseenter', () => {
+        document.body.style.overflowY = 'hidden';
+    });
+
+    hoverItem.addEventListener('mouseleave', () => {
+        document.body.style.overflowY = 'auto';
+    });
+});
