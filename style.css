@@ -114,20 +114,73 @@ body{
 .cover:nth-child(6) .bottom button:nth-child(2){
     outline: 1px solid #393c41;
 }
-nav{
+nav {
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: space-between;
-    padding: 20px 50px;
-    position: absolute;
+    padding: 10px 40px;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background-color: transparent;
     z-index: 500;
+    transition: top 1s ease-in-out;
 }
-nav svg{
+
+nav.scrolled-up {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #393c41 !important;
+}
+nav.scrolled-up .links h1{
+    color: #393c41 !important;
+}
+nav.scrolled-up .icons i{
+    color: #393c41 !important;
+}
+nav.scrolled-up .logo svg path{
+    fill: #393c41;
+}
+
+nav.hidden {
+    top: -100px; /* Hide the navbar by moving it up */
+}
+
+nav .logo svg{
     width: 120px;
+}
+nav .links{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+nav .links h1{
+    color: white;
+    font-size: 14px;
+    padding: 7px 15px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    font-weight: 400;
+}
+nav .links h1:hover{
+    background-color: rgba(0,0,0,.05);
+    border-radius: 5px;
+}
+nav .icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav .icons i{
+    color: white;
+    font-size: 16px;
+    padding: 7px 15px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+nav .icons i:hover{
+    background-color: rgba(0,0,0,.05);
+    border-radius: 5px;
 }
 .footer{
     width: 100%;
