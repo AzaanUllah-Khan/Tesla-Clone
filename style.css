@@ -143,7 +143,7 @@ nav.scrolled-up .logo svg path{
 }
 
 nav.hidden {
-    top: -100px; /* Hide the navbar by moving it up */
+    top: -100px;
 }
 
 nav .logo svg{
