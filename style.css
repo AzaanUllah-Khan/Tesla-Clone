@@ -346,13 +346,17 @@ footer p {
 }
 .slider-top{
     width: 100%;
-    height: 85vh;
+    height: fit-content;
     background-color: white;
     position: fixed;
     top: -100%;
     left: 0;
     z-index: 400;
     transition: all .6s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 90px 20px 70px;
 }
 .blur{
     display: none;
@@ -362,4 +366,27 @@ footer p {
     position: fixed;
     top: 0;
     left: 0;
+}
+.slider-top .comp{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.slider-top .comp .single{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.slider-top .comp .single img{
+    width: 200px;
+}
+.slider-top .comp .single p{
+    font-weight: 600;
+    color: #393c41;
+    cursor: pointer;
+    
 }
