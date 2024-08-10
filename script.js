@@ -21,7 +21,7 @@ window.addEventListener('scroll', function() {
 
 const hoverItems = document.querySelectorAll('.links h1');
 const allH1 = document.querySelectorAll('.links h1');
-const allI = document.querySelectorAll('.links i');
+const allI = document.querySelectorAll('.icons i');
 
 hoverItems.forEach(hoverItem => {
     hoverItem.addEventListener('mouseenter', () => {
