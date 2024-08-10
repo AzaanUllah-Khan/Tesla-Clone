@@ -230,49 +230,13 @@ footer p {
 
 }
 @media screen and (max-width: 600px) {
-    .cover .bottom button {
-        width: 50%;
-    }
-
-    .cover:nth-child(12) .bottom button {
-        width: 100%;
-    }
-
-    .cover .top h1 {
-        font-size: 42px;
-    }
-
-    .cover .top h2 {
-        font-size: 24px;
-    }
-
-    .cover:nth-child(8) {
-        background-position: middle;
-    }
-
-    .cover:nth-child(8) .top svg {
-        width: 300px;
-    }
-
     footer {
         flex-direction: column;
         gap: 15px;
         border-top: 1px solid #d0d1d2;
     }
-
-    .footer p {
-        width: 100%;
-    }
-
-    .footer {
-        padding: 10px;
-    }
 }
 @media screen and (max-width: 400px) {
-    .cover:nth-child(8) .top svg {
-        width: 250px;
-    }
-
     nav {
         padding: 10px 20px;
     }
