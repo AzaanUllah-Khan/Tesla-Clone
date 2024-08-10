@@ -25,6 +25,11 @@ const allI = document.querySelectorAll('.icons i');
 
 hoverItems.forEach(hoverItem => {
     hoverItem.addEventListener('mouseenter', () => {
+        document.getElementById('Vehicles').style.display = "none"
+        document.getElementById('Energy').style.display = "none"
+        document.getElementById('Charging').style.display = "none"
+        document.getElementById('Shop').style.display = "none"
+        document.getElementById(hoverItem.textContent).style.display = "flex"
         document.body.style.overflowY = 'hidden';
         document.querySelector('.slider-top').style.top = '0';
         document.querySelector('.blur').style.display = "block";

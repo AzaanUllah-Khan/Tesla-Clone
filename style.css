@@ -369,7 +369,7 @@ footer p {
 }
 .slider-top .comp{
     width: 70%;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
