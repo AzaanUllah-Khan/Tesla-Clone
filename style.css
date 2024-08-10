@@ -357,6 +357,7 @@ footer p {
     align-items: center;
     justify-content: center;
     padding: 90px 20px 70px;
+    visibility: hidden;
 }
 .blur{
     display: none;
@@ -373,21 +374,35 @@ footer p {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 20px;
 }
 .slider-top .comp .single{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 4px;
+    gap: 3px;
 }
 .slider-top .comp .single img{
-    width: 250px;
+    width: 225px;
 }
 .slider-top .comp .single p{
     font-weight: 600;
     color: #393c41;
     cursor: pointer;
-
+}
+.slider-top .comp#Discover{
+    align-items: start;
+    gap: 50px;
+}
+.slider-top .comp .onne h1{
+    color: #5c5e62;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.slider-top .comp .onne p{
+    font-size: 14px;
+    color: #171a20;
+    margin-bottom: 10px;
 }
