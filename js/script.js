@@ -1,7 +1,7 @@
 let lastScrollTop = 0;
 const navbar = document.getElementById('navbar');
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
     if (scrollTop > lastScrollTop) {
@@ -35,21 +35,21 @@ hoverItems.forEach(hoverItem => {
         document.querySelector('.slider-top').style.visibility = 'visible';
         document.querySelector('.slider-top').style.top = '0';
         document.querySelector('.blur').style.display = "block";
-    
+
         const svgPaths = document.querySelectorAll('nav svg path');
         svgPaths.forEach(path => {
             path.style.fill = 'black';
         });
-    
+
         allH1.forEach(h1 => {
             h1.style.color = 'black';
         });
-    
+
         allI.forEach(i => {
             i.style.color = 'black';
         });
     });
-    
+
     hoverItem.addEventListener('mouseleave', () => {
         document.body.style.overflowY = 'auto';
         document.querySelector('.slider-top').style.top = '-100%';
@@ -67,3 +67,8 @@ hoverItems.forEach(hoverItem => {
         });
     });
 });
+
+function red(car) {
+    localStorage.setItem("car",car)
+    location.href="demo.html"
+}

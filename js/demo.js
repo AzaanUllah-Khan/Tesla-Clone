@@ -15,7 +15,7 @@ hoverItems.forEach(hoverItem => {
         document.querySelector('.slider-top').style.top = '0';
         document.querySelector('.blur').style.display = "block";
     });
-    
+
     hoverItem.addEventListener('mouseleave', () => {
         document.body.style.overflowY = 'auto';
         document.querySelector('.slider-top').style.top = '-100%';
@@ -23,3 +23,14 @@ hoverItems.forEach(hoverItem => {
         document.querySelector('.blur').style.display = "none";
     });
 });
+function red() {
+    const urlParams = new URLSearchParams(window.location.search);
+
+    if (!urlParams.has('car')) {
+        urlParams.set('car', localStorage.getItem('car'));
+        window.location.search = urlParams.toString();
+    }
+}
+
+red();
+document.getElementById('h1').textContent = "Demo Drive " + localStorage.getItem('car')
