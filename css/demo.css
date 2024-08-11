@@ -16,38 +16,19 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 10px 40px;
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     background-color: transparent;
+    position: relative;
     z-index: 500;
     transition: top .7s ease-in-out;
 }
 
-nav.scrolled-up {
-    background-color: rgba(255, 255, 255, 0.9);
+nav{
     color: #393c41 !important;
 }
 
-nav.scrolled-up button {
-    color: #393c41;
-}
-
-nav.scrolled-up .links h1 {
-    color: #393c41 !important;
-}
-
-nav.scrolled-up .icons i {
-    color: #393c41 !important;
-}
-
-nav.scrolled-up .logo svg path {
+nav .logo svg path {
     fill: #393c41 !important;
-}
-
-nav.hidden {
-    top: -100px;
 }
 
 nav .logo svg {
@@ -61,7 +42,7 @@ nav .links {
 }
 
 nav .links h1 {
-    color: white;
+    color: #393c41;
     font-size: 14px;
     padding: 7px 15px;
     transition: all .3s ease-in-out;
@@ -81,7 +62,7 @@ nav .icons {
 }
 
 nav .icons i {
-    color: white;
+    color: #393c41;
     font-size: 16px;
     padding: 7px 15px;
     transition: all .3s ease-in-out;
@@ -95,7 +76,7 @@ nav .icons i:hover {
 
 nav button {
     font-size: 14px;
-    color: #fff;
+    color: #393c41;
     border: none;
     outline: none;
     border-radius: 5px;
@@ -104,32 +85,9 @@ nav button {
     display: none;
 }
 
-.footer {
-    width: 100%;
-    color: #d0d1d2;
-    text-align: center;
-    padding: 30px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.footer p {
-    font-size: 12px;
-    width: 55%;
-    line-height: 17px;
-}
-
-.footer p span {
-    color: #eee;
-    font-weight: bolder;
-    text-decoration: underline;
-    cursor: pointer;
-}
-
 footer {
     width: 100%;
-    color: #d0d1d2;
+    color: #5c5e62;
     padding: 10px 10px 20px;
     display: flex;
     align-items: center;
@@ -205,6 +163,101 @@ footer p {
     margin-bottom: 10px;
 }
 
+main{
+    width: 700px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+main h1{
+    color: #171a20;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+main p{
+    color: #171a20;
+    font-size: 16px;
+    line-height: 20px;
+    color: #393c41;
+}
+main h3{
+    color: #171a20;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    font-weight: 600;
+}
+main span{
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 24px;
+}
+
+main h2{
+    color: #171a20;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-weight: 600;
+}
+main .form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+main .form .row{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+main .form .row .input{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+main .form .row .input label{
+    color: #5c5e62;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+main .form .row .input input{
+    padding: 10px;
+    outline: none;
+    background-color: #f4f4f4;
+    border: none;
+    border-radius: 5px;
+}
+main button{
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    background-color: #3d6ae1;
+    width: 300px;
+    text-align: center;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.flex{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: start;
+}
+.flex h4{
+    font-size: 14px;
+    font-weight: 600;
+    color: #5c5e62;
+}
+.flex input{
+    fill: #393c41;
+}
 @media screen and (max-width: 805px) {
     nav {
         padding: 15px 30px;
@@ -227,6 +280,13 @@ footer p {
     .blur{
         display: none;
     }
+    main{
+        width: 100%;
+        padding: 40px 30px;
+    }
+    main button{
+        width: 100%;
+    }
 
 }
 @media screen and (max-width: 600px) {
@@ -235,9 +295,31 @@ footer p {
         gap: 15px;
         border-top: 1px solid #d0d1d2;
     }
+    main h1{
+        font-size: 30px;
+    }
+    main h3{
+        font-size: 20px;
+    }
+    main h2{
+        font-size: 24px;
+    }
+    main .form{
+        gap: 20px;
+    }
+    main .form .row{
+        flex-direction: column;
+        gap: 20px;
+    }
+    main .form .row .input{
+        width: 100%;
+    }
 }
 @media screen and (max-width: 400px) {
     nav {
         padding: 10px 20px;
+    }
+    main p:nth-of-type(2){
+        display: none;
     }
 }
